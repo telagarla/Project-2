@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Login</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+		<!-- Font awesome -->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	</head>
+    <style>
+        *, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Kaushan Script','Wendy One', sans-serif; }
+
+h1, h2, h3 {
+  color: #fff; }
+
+.con {
+  background: url("images/login.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.overlay {
+  background: rgba(31, 31, 31, 0.4);
+  height: inherit; }
+
+.main-con {
+  border-radius: 5px;
+  margin: 10px; }
+
+::-webkit-input-placeholder {
+  color: #cacaca;
+  text-align: center; }
+
+input {
+  outline: none; }
+
+.in {
+  font-family: 'Didact Gothic', sans-serif;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #969696;
+  color: #E0E0E0;
+  text-align: center;
+  font-size: 16px;
+  margin: -25px 0 0 0px;
+  padding: 10px 0px;
+  width: 100%; }
+  .in:focus {
+    outline: none; }
+    .in:focus::-webkit-input-placeholder {
+      color: #E0E0E0; }
+
+.in:focus + .underline {
+  transform: scale(1); }
+
+.underline {
+  background-color: #129cf3;
+  display: inline-block;
+  height: 2px;
+  margin-top: -5px;
+  position: absolute;
+  top: 38px;
+  -webkit-transform: scale(0, 2);
+  transform: scale(0, 2);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  width: 95.5%; }
+
+.t {
+  font-family: 'Didact Gothic', sans-serif;
+  color: #969696;
+  margin-top: 200px; }
+
+.btn {
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: 700; }
+
+@media only screen and (max-width: 680px) {
+  .display-3 {
+    font-size: 50px; } }
+@media only screen and (max-width: 460px) {
+  .display-3 {
+    font-size: 40px; } }
+
+/*# sourceMappingURL=login1.css.map */
+
+    </style>
+	<body>
+		<section class="con">
+			<div class="overlay">
+				<div class="container">
+
+					<div class="row justify-content-center">
+						<div class="col-md-8 p-3 mt-5">
+							<h2 class="text-center display-3">Login</h2>
+						</div>
+					</div>
+					<div class="row h-50 justify-content-center">
+						<div class="col-md-8 main-con p-3 justify-content-center">
+							<form class="form-horizontal">
+								<div class="form-group row justify-content-center">
+								<div class="col-md-10 mb-5">
+									<div class="wrapper">
+										<input type="text"  id="username" class="in" placeholder="Username">
+										 <span class="underline"></span>
+										</div>
+
+								</div>
+								</div>
+								<div class="form-group row">
+								<div class="col-md-10 offset-md-1 mb-5">
+									<div class="wrapper">
+									<input type="password" id="password" class="in" placeholder="Password">
+										<span class="underline"></span>
+
+									</div>
+
+								</div>
+								</div>
+
+								<div class="form-group row justify-content-center">
+									<div class="col-md-6">
+									<a href="index.html">
+										<button type ="submit" class="btn btn-primary btn-block" onclick="validate()">Login</button>
+									</a>
+
+										<br>
+										<p> <font color=white><font size=3px;>No Username and Password? Register Here For Free!</p>	
+											<a href="index.html" style="text-decoration: none; color: white;">									
+										</a>
+									</br>
+                                    <a href="index.html" style="text-decoration: none; color: white;">
+ <button type="submit" formaction="index.html" class="btn btn-primary btn-block">HOME</button></a>
+                                </div>
+
+								</div>
+
+							</form>
+
+
+							<p class="text-center t">Brought To You By: code-projects</p>
+						</div>
+					</div>
+				</div>
+		</section>
+		
+	</body >
+	<!-- Scripts in case you need them :P -->
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+	<!-- Tether -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+	<!-- Bootstrap js -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	<script src="js/login.js"> </script>
+	<script>
+		function validate(){
+			alert("Thank You Login.")
+		}
+	</script>
+</body>
+</html>
